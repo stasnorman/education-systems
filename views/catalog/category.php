@@ -19,28 +19,26 @@
                                     </h4>
                                 </div>
                             </div>
-                        <?php endforeach; ?>
+                        <?php endforeach; ?>    
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-9 padding-right">
                 <div class="features_items"><!--features_items-->
-                    <h2 class="title text-center">Последние товары</h2>
+                    <h2 class="title text-center">Список мероприятий</h2>
 
                     <?php foreach ($categoryProducts as $product): ?>
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
-                                        <h2>$<?php echo $product['price']; ?></h2>
+                                        <img src="<?php echo Event::getImage($product['id']); ?>" alt="" />
                                         <p>
-                                            <a href="/product/<?php echo $product['id']; ?>">
+                                            <a href="/event/<?php echo $product['id']; ?>">
                                                 <?php echo $product['name']; ?>
                                             </a>
                                         </p>
-                                        <a href="/cart/add/<?php echo $product['id']; ?>" class="btn btn-default add-to-cart" data-id="<?php echo $product['id']; ?>"><i class="fa fa-shopping-cart"></i>В корзину</a>
                                     </div>
                                     <?php if ($product['is_new']): ?>
                                         <img src="/template/images/home/new.png" class="new" alt="" />

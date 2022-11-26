@@ -18,7 +18,7 @@ class CatalogController
         $categories = Category::getCategoriesList();
 
         // Список последних товаров
-        $latestProducts = Product::getLatestProducts(12);
+        $latestProducts = Event::getLatestProducts(12);
 
         // Подключаем вид
         require_once(ROOT . '/views/catalog/index.php');
@@ -34,13 +34,13 @@ class CatalogController
         $categories = Category::getCategoriesList();
 
         // Список товаров в категории
-        $categoryProducts = Product::getProductsListByCategory($categoryId, $page);
+        $categoryProducts = Event::getProductsListByCategory($categoryId, $page);
 
         // Общее количетсво товаров (необходимо для постраничной навигации)
-        $total = Product::getTotalProductsInCategory($categoryId);
+        $total = Event::getTotalProductsInCategory($categoryId);
 
         // Создаем объект Pagination - постраничная навигация
-        $pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'page-');
+        $pagination = new Pagination($total, $page, Event::SHOW_BY_DEFAULT, 'page-');
 
         // Подключаем вид
         require_once(ROOT . '/views/catalog/category.php');

@@ -29,11 +29,11 @@ class CabinetController
         return true;
     }
 
-    public function actionHistory(){
+    public function actionStudy(){
         $userId = User::checkLogged();
         $user = User::getUserById($userId);
         // Подключаем вид
-        require_once(ROOT . '/views/cabinet/history.php');
+        require_once(ROOT . '/views/cabinet/study.php');
         return true;
    }
  

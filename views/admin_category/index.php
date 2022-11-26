@@ -15,7 +15,7 @@
 
             <a href="/admin/category/create" class="btn btn-default back"><i class="fa fa-plus"></i> Добавить категорию</a>
             
-            <h4>Список категорий</h4>
+            <h4>Список категорий мероприятий</h4>
 
             <br/>
 

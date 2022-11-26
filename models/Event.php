@@ -63,7 +63,7 @@ class Event
         $db = Db::getConnection();
 
         // Текст запроса к БД
-        $sql = 'SELECT id, name, price, is_new FROM `eventstudy` '
+        $sql = 'SELECT id, name, is_new FROM `eventstudy` '
                 . 'WHERE status = 1 AND category_id = :category_id '
                 . 'ORDER BY id ASC LIMIT :limit OFFSET :offset';
 
@@ -82,7 +82,6 @@ class Event
         while ($row = $result->fetch()) {
             $products[$i]['id'] = $row['id'];
             $products[$i]['name'] = $row['name'];
-            $products[$i]['price'] = $row['price'];
             $products[$i]['is_new'] = $row['is_new'];
             $i++;
         }

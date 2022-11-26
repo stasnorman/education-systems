@@ -19,7 +19,7 @@ return array(
     'user/login' => 'user/login',
     'user/logout' => 'user/logout',
     'cabinet/edit' => 'cabinet/edit',
-    'cabinet/history' => 'cabinet/history',
+    'cabinet/study' => 'cabinet/study',
     'cabinet/testpage' => 'cabinet/testpage',
     'cabinet' => 'cabinet/index',
     // Управление товарами:    

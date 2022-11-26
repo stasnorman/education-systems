@@ -10,28 +10,43 @@ body {
     position: relative;
     font-weight:400px;
 }
+input.check{
+    height: 30px;
+    width: 30px;
+}
+
+.check{
+    background: blue;
+}
 
 .pointA{
     display: inline-block;
     background: #030350;
-    border-radius: 20px;
-    padding: 15px;
-    
+    border-radius: 30px;
+    padding: 11px;
+    color: white;
+    width: 60px;
+    font-weight: bold;
+    font-size: 20pt;
 }
 
 .pointB{
     display: inline-block;
     background: #030350;
-    border-radius: 20px;
-    padding: 15px;
+    border-radius: 30px;
+    padding: 11px;
+    color: white;
+    width: 60px;
+    font-weight: bold;
+    font-size: 20pt;
 }
 
 .pathHero{
     display: inline-block;
-    width: 92%;
+    width: 90%;
     background: #17649b;
     padding: 5px;
-    margin: 10px -5px;
+    margin: 0px -5px;
 }
 
 html, body {

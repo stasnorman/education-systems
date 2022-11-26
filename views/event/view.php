@@ -54,8 +54,18 @@
                     <div class="row">                                
                         <div class="col-sm-12">
                             <br/>
-                            <h2>Описание хакатона</h2>
+                            <h2>🏆 Описание хакатона </h2>
                             <?php echo $product['description']; ?>
+                        </div>
+                        <div class="col-sm-12">
+                            <br/>
+                            <h2>🏷️ Дата проведения </h2>
+                            <h3><?php echo date('d.m.Y',strtotime($product['dateEvent'])); ?></h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <br/>
+                            <h2>⚓ Ссылка на информацию </h2>
+                            <a href="<?php echo $product['contactForm']; ?>" target="_blank"><?php echo $product['contactForm']; ?></a>
                         </div>
                     </div>
                 </div><!--/product-details-->
