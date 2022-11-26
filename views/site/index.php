@@ -33,6 +33,9 @@
                                 <div class="single-products">
                                     <div class="productinfo text-center">
                                         <img src="<?php echo Event::getImage($product['id']); ?>" alt="" />
+                                        <div>
+        Тут будет текст описания
+    </div>
                                         <p>
                                             <a style="color: #fe980f; font-size: 15pt; font-weight: bold;" href="/event/<?php echo $product['id']; ?>">
                                                 <?php echo $product['name']; ?>
